@@ -37,14 +37,16 @@ public class Main {
 
                 float b = Float.parseFloat(sc.nextLine());
 
+                System.out.println("\n");
+
                 switch (opcion){
                     case 1:
-                        System.out.println("El resultado de la suma es: " + a + b);
+                        System.out.println("El resultado de la suma es: " +( a + b));
                 }
 
             }
 
 
-            }
+            } while ()
         }
 }

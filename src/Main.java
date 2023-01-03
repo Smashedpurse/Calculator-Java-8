@@ -24,8 +24,10 @@ public class Main {
             sc = new Scanner(System.in);
             opcion = Integer.parseInt(sc.nextLine());
 
-            if (opcion < 0 || opcion < 5){
+            if (opcion < 0 || opcion > 5){
+
                 System.out.println("Ingresa una opción valida");
+
             } else if (opcion != 0){
                 System.out.println("\n");
 
@@ -42,11 +44,24 @@ public class Main {
                 switch (opcion){
                     case 1:
                         System.out.println("El resultado de la suma es: " +( a + b));
+                        break;
+                    case 2:
+                        System.out.println("El resultado de la resta es: " +( a - b));
+                        break;
+                    case 3:
+                        System.out.println("El resultado de la multiplicacion es: " +( a * b));
+                        break;
+                    case 4:
+                        System.out.println("El resultado de la division es: " +( a / b));
+                        break;
+                    case 5:
+                        System.out.println("El resultado de resto es es: " +( a % b));
+                        break;
                 }
-
             }
+        } while (opcion != 0);
 
-
-            } while ()
-        }
+        sc.close();
+        System.out.println("Finalizando la ejecución de la calculadora");
+    }
 }
